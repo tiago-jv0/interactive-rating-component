@@ -1,0 +1,38 @@
+.rating {
+
+    &__label {
+        cursor: pointer;
+        height: 4.2rem;
+        width: 4.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 50%;
+        color: var(--medium-grey);
+        font-size: var(--font-size-paragraph);
+        line-height: var(--line-height-paragraph);
+        font-weight: var(--font-weight-bold);
+        transition: all 0.4s;
+        background-color: var(--dark-blue);
+
+        &:hover {
+            color: var(--white);
+            background-color: var(--medium-grey);
+        }
+
+        @media screen and (min-width: 1440px) {
+            height: 5.1rem;
+            width: 5.1rem;
+        }
+    }
+
+    &__check-box {
+        display: none;
+    }
+
+    &__check-box:checked + &__label {
+        background-color: var(--orange);
+        color: var(--white);
+    }
+}

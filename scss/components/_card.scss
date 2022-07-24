@@ -1,0 +1,85 @@
+.card {
+    background-image: var(--gradient);
+    border-radius: 1.5rem;
+    padding: 2.4rem 2.4rem 3.2rem;
+    max-width: 32.7rem;
+    margin: auto;
+
+    @media screen and (min-width: 1440px) {
+        max-width: 41.2rem;
+        padding: 3.2rem;
+    }
+    
+    &__icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--dark-blue);
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+
+        @media screen and (min-width: 1440px) {
+            width: 4.8rem;
+            height: 4.8rem;
+        }
+    }
+
+    &__title {
+        margin-top: 1.6rem;
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-heading);
+        color: var(--white);
+        line-height: var(--line-height-heading);
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 3rem;
+        }
+    }
+
+    &__description {
+        margin-top: 1.7rem;
+        line-height: var(--line-height-paragraph);
+        font-size: var(--font-size-paragraph);
+        color: var(--light-grey);
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__ratings {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.4rem;
+    }
+
+    &__button {
+        background-color: var(--orange);
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 4.5rem;
+        margin-top: 2.4rem;
+        color: var(--white);
+        font-size: var(--font-size-paragraph);
+        font-weight: var(--font-weight-bold);
+        border-radius: 2.25rem;
+        text-transform: uppercase;
+        letter-spacing: 1.87px;
+        line-height: 1.7rem;
+        transition: all .3s;
+        &:hover {
+            background-color: var(--white);
+            color: var(--orange);
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 3.2rem;
+            line-height: 1.8rem;
+            letter-spacing: 2px;
+        }
+    }
+}

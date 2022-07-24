@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "sass": "^1.54.0"
+  },
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile:scss": "yarn sass ./scss/main.scss ./styles.css --watch"
+  }
+}
