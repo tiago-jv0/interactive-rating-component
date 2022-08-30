@@ -19,7 +19,7 @@
     --font-size-heading: 2.8rem;
     --font-size-paragraph: 1.5rem;
     --line-height-paragraph: 2.4rem;
-    --line-height-heading: 3rem;
+    --line-height-heading: 3.5rem;
   }
 }
 
@@ -43,6 +43,12 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: block;
+    padding-top: 19.5rem;
+  }
 }
 
 button {
@@ -73,6 +79,8 @@ button {
   .rating__label {
     height: 5.1rem;
     width: 5.1rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 .rating__check-box {
@@ -93,7 +101,8 @@ button {
 @media screen and (min-width: 1440px) {
   .card {
     max-width: 41.2rem;
-    padding: 3.2rem;
+    padding: 3.2rem 4rem 3.2rem 3.2rem;
+    border-radius: 3rem;
   }
 }
 .card__icon {

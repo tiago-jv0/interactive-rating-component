@@ -20,6 +20,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        padding-top: 19.5rem;
+    }
 }
 
 button {
